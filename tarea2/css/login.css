@@ -1,0 +1,103 @@
+/* Asegurar que el body y el contenedor principal ocupen toda la pantalla */
+html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+body {
+    background-color: #f8f9fa;
+}
+
+
+/* El contenido principal debe ocupar todo el espacio disponible menos el footer */
+section.container {
+    flex: 1;
+}
+
+.container-login {
+    width: 500px;
+}
+
+.banner1 {
+    background-image: url("../img/fondo1.jpg");
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: multiply;
+    box-shadow: inset 0 0 0 1000px rgba(23, 23, 23, 0.68);
+}
+
+.titulo1 {
+    font-weight: bolder;
+    border: #000;
+    padding-left: 40px;
+}
+
+/* Estilos para el footer */
+footer {
+    color: #fff;
+    padding: 20px 0px;
+    font-size: 20px;
+    background-color: #713b06;
+    text-align: center;
+}
+
+/* Estilos para el header */
+header {
+    text-align: center;
+}
+
+/* Ajustar los estilos del título en el header */
+.titulo1 {
+    color: #fff;
+    font-size: 45px;
+}
+
+.usuario {
+    width: 70%;
+}
+
+a {
+    font-weight: bold;
+    color: #713b06;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #0063be;
+    text-decoration: none;
+}
+
+input:checked {
+    background-color: #713b06 !important;
+}
+
+input,
+select {
+    cursor: pointer;
+}
+
+/* Estilo que permite mostrar los campos validados con un borde de color rojo */
+.error {
+    border: red solid 1px;
+}
+
+.btninicio {
+    color: #fff;
+    background-color: #713b06 !important;
+    font-size: 20px;
+    width: 100%;
+}
+
+#forgot-pass {
+    font-weight: bold;
+    text-align: end;
+    font-size: 12px;
+}
+
+@media (max-width: 575px) {
+    .animacion2 {
+        width: 100% !important;
+    }
+}
